@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+@layer utilities {
+  .flexCenter {
+    @apply flex items-center justify-center;
+  }
+  .flexBetween {
+    @apply flex items-center justify-between;
+  }
+  .flexStart {
+    @apply flex items-center justify-start;
+  }
+  .flexEnd {
+    @apply flex items-center justify-end;
+  }
+  .flexRow {
+    @apply flex flex-row justify-between items-center;
+  }
+  .flexCol {
+    @apply flex flex-col justify-between items-start;
+  }
+
+  .btn_white {
+    @apply border-white regular-16 bg-blue-90 px-7 py-2.5 text-white hover:bg-green-90
+    transition delay-100;
+  }
+  .btn_dark_green {
+    @apply border-white regular-16 tracking-widest px-8 py-5 text-white bg-blue-90 hover:bg-green-90
+    transition delay-100;
+  }
+  .btn_green {
+    @apply border-white regular-16 bg-green-500 px-8 py-5 text-white hover:bg-green-90
+    transition delay-100;
+  }
+
+  .Poppins {
+    font-family: Poppins, sans-serif;
+  }
+  .OpenSans {
+    font-family: OpenSans, sans-serif;
+  }
+
+  .colorBlue {
+    color: #0d5ba6;
+  }
+  .colorGrey {
+    color: #727272;
+  }
+  .colorDarkGrey {
+    color: #181818;
+  }
+
+  .bold-64 {
+    @apply text-[64px] font-[700] leading-[160%];
+  }
+  .bold-48 {
+    @apply text-[48px] font-[700] leading-[150%];
+  }
+  .bold-36 {
+    @apply text-[36px] font-[700] leading-[160%];
+  }
+  .bold-30 {
+    @apply text-[30px] font-[700] leading-[130%];
+  }
+  .bold-24 {
+    @apply text-[24px] font-[500] leading-[100%];
+  }
+  .bold-20 {
+    @apply text-[20px] font-[500] leading-[100%];
+  }
+  .bold-18 {
+    @apply text-[18px] font-[500] leading-[160%];
+  }
+
+  .regular-26 {
+    @apply text-[26px] font-[400];
+  }
+  .regular-24 {
+    @apply text-[24px] font-[400];
+  }
+  .regular-18 {
+    @apply text-[18px] font-[400];
+  }
+  .regular-16 {
+    @apply text-[16px] font-[400];
+  }
+  .regular-14 {
+    @apply text-[14px] font-[400];
+  }
+  .regular-12 {
+    @apply text-[12px] font-[400];
+  }
+
+  .paddingX {
+    @apply sm:px-16 px-6 xl:px-40;
+  }
+  .paddingY {
+    @apply sm:py-24 py-16;
+  }
+  .padding {
+    @apply sm:px-16 px-6 sm:py-36 py-28 xl:px-40 xl:py-40;
+  }
+
+  .heroBackground {
+    @apply bg-cover bg-center bg-no-repeat;
+    background-image: url(/hero_section.png);
+  }
+  .slide_1 {
+    @apply bg-cover bg-center bg-no-repeat;
+    background-image: url(/bg_about_1.png);
+  }
+  .slide_2 {
+    @apply bg-cover bg-center bg-no-repeat;
+    background-image: url(/bg_about_2.png);
+  }
+  .slide_3 {
+    @apply bg-cover bg-center bg-no-repeat;
+    background-image: url(/bg_about_3.png);
+  }
+  .slide_4 {
+    @apply bg-cover bg-center bg-no-repeat;
+    background-image: url(/bg_about_4.png);
+  }
+
+  .overlay {
+    @apply bg-[#00162088] w-full min-h-screen;
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
