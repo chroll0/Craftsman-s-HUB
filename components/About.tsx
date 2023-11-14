@@ -33,8 +33,8 @@ const Slider = ({ title, subtitle, peopleJoined }: SliderProps) => {
 
 const About = () => {
   return (
-    <div id="about" className="w-full paddingY">
-      <div className="paddingX pb-14">
+    <div id="about" className="w-full">
+      <div className="paddingX py-14">
         <h2 className="bold-30 text-blue-400">Who We Are?</h2>
         <div className="flexCol sm:flexRow gap-12">
           <p className="pt-4 sm:regular-18 regular-14 lg:max-w-[70%]">

@@ -18,7 +18,7 @@ const Hiring = () => {
         <div className="bg-blue-400 w-[290px] h-5 absolute right-[-100px] top-8 rotate-45"></div>
         <div className="bg-blue-400 w-[290px] h-5 absolute left-[-100px] top-[270px] rotate-45 hidden lg:block"></div>
       </div>
-      <div className="flex flex-wrap w-full gap-12 px-4 py-12 paddingX mt-12">
+      <div className="flex flex-wrap w-full gap-12 px-4 py-12 paddingX">
         {hiring.map((content, index) => (
           <HiringCard key={content.title} index={index} {...content} />
         ))}

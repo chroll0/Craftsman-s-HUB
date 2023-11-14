@@ -110,7 +110,7 @@
     @apply sm:px-16 px-6 xl:px-40;
   }
   .paddingY {
-    @apply sm:py-24 py-16;
+    @apply sm:py-14 py-8;
   }
   .padding {
     @apply sm:px-16 px-6 sm:py-36 py-28 xl:px-40 xl:py-40;
