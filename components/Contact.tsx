@@ -57,9 +57,9 @@ const Contact = () => {
     <div
       id="contact"
       className="paddingY paddingX md:flex-row flex-col flex gap-10 xl:gap-20
-      overflow-hidden"
+      overflow-hidden justify-center"
     >
-      <motion.div className="flex-1 bg-green-90 p-8 rounded-2xl max-w-4xl">
+      <motion.div className="flex-1 bg-green-90 p-8 rounded-2xl max-w-2xl">
         <h3 className="bold-30 text-blue-400">Contact</h3>
         <form className="mt-8 flex flex-col gap-8" onSubmit={handleSubmit}>
           <label className="flex flex-col">

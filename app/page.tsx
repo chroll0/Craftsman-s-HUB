@@ -6,8 +6,8 @@ export default function Home() {
       <Hero />
       <About />
       <Hiring />
-      <Directory />
       <Blogs />
+      <Directory />
       <Contact />
     </main>
   );

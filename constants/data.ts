@@ -94,3 +94,22 @@ export const catalog = [
     icon: "/iron-gate.png",
   },
 ];
+export const reviews = [
+  {
+    firstName: "gela",
+    lastName: "smith",
+    image: "/jhon.png",
+    specialization: "Electrician",
+    description:
+      "Experienced electrician with the expertise to diagnose and repair electrical issues. Committed to delivering high-quality service and ensuring the satisfaction of clients. Trusted for reliable solutions and professionalism.",
+    number: "555 123 456",
+  },
+  {
+    firstName: "gela",
+    lastName: "smith",
+    image: "/jhon.png",
+    specialization: "Electrician",
+    description: "can repair electrical issus",
+    number: "555 123 456",
+  },
+];
