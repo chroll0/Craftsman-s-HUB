@@ -64,3 +64,33 @@ export const slides = [
     peopleJoined: `${workers} Craftsman`,
   },
 ];
+export const catalog = [
+  {
+    title: "house works",
+    icon: "/house.png",
+  },
+  {
+    title: "electricity",
+    icon: "/electricity.png",
+  },
+  {
+    title: "coloring",
+    icon: "/painting.png",
+  },
+  {
+    title: "plumbing",
+    icon: "/plumbing.png",
+  },
+  {
+    title: "construction",
+    icon: "/construction.png",
+  },
+  {
+    title: "metal-plastic",
+    icon: "/metal-plastic.png",
+  },
+  {
+    title: "iron works",
+    icon: "/iron-gate.png",
+  },
+];
