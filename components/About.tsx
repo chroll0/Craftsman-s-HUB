@@ -54,7 +54,7 @@ const About = () => {
       </div>
       <div className="hide-scrollbar flex h-[340px] w-full items-start justify-start gap-8 overflow-x-auto lg:h-[400px] xl:h-[640px] xl:px-16">
         <div
-          className="h-full w-full min-w-[1100px] slide_1 paddingX xl:px-24 xl:rounded-3xl 
+          className="h-full w-full xl:min-w-[1100px] md:min-w-[700px] min-w-[500px] slide_1 paddingX xl:px-24 xl:rounded-3xl 
           rounded-e-3xl"
         >
           <Slider
@@ -64,7 +64,7 @@ const About = () => {
           />
         </div>
         <div
-          className="h-full w-full min-w-[1100px] slide_2 paddingX xl:px-24 xl:rounded-3xl 
+          className="h-full w-full xl:min-w-[1100px] md:min-w-[700px] min-w-[500px] slide_2 paddingX xl:px-24 xl:rounded-3xl 
           rounded-e-3xl"
         >
           <Slider
@@ -74,7 +74,7 @@ const About = () => {
           />
         </div>
         <div
-          className="h-full w-full min-w-[1100px] slide_3 paddingX xl:px-24 xl:rounded-3xl 
+          className="h-full w-full xl:min-w-[1100px] md:min-w-[700px] min-w-[500px] slide_3 paddingX xl:px-24 xl:rounded-3xl 
           rounded-e-3xl"
         >
           <Slider
@@ -84,7 +84,7 @@ const About = () => {
           />
         </div>
         <div
-          className="h-full w-full min-w-[1100px] slide_4 paddingX xl:px-24 xl:rounded-3xl 
+          className="h-full w-full xl:min-w-[1100px] md:min-w-[700px] min-w-[500px] slide_4 paddingX xl:px-24 xl:rounded-3xl 
           rounded-e-3xl"
         >
           <Slider

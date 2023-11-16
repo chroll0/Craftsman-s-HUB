@@ -96,20 +96,54 @@ export const catalog = [
 ];
 export const reviews = [
   {
-    firstName: "gela",
+    firstName: "John",
     lastName: "smith",
-    image: "/jhon.png",
+    image: "/John.png",
     specialization: "Electrician",
     description:
       "Experienced electrician with the expertise to diagnose and repair electrical issues. Committed to delivering high-quality service and ensuring the satisfaction of clients. Trusted for reliable solutions and professionalism.",
     number: "555 123 456",
+    location: "tbilisi",
   },
   {
-    firstName: "gela",
+    firstName: "John",
     lastName: "smith",
-    image: "/jhon.png",
+    image: "/John.png",
     specialization: "Electrician",
-    description: "can repair electrical issus",
+    description:
+      "Experienced electrician with the expertise to diagnose and repair electrical issues. Committed to delivering high-quality service and ensuring the satisfaction of clients. Trusted for reliable solutions and professionalism.",
     number: "555 123 456",
+    location: "rustavi",
   },
 ];
+// FOOTER SECTION
+export const FOOTER_LINKS = [
+  {
+    title: "Learn More",
+    links: [
+      "About Hub",
+      "Feedbacks",
+      "Environment",
+      "Directory",
+      "Privacy Policy",
+      "Contact Us",
+    ],
+  },
+];
+
+export const FOOTER_CONTACT_INFO = {
+  title: "Contact Us",
+  links: [
+    { label: "Number:", value: "+995 577 777 555" },
+    { label: "", value: "+995 577 555 777" },
+    { label: "Email:", value: "craftsmansHub@email.com" },
+  ],
+};
+
+export const SOCIALS = {
+  title: "Social",
+  links: [
+    { image: "/facebook.svg", website: "https://www.facebook.com/" },
+    { image: "/instagram.svg", website: "https://www.instagram.com/" },
+  ],
+};

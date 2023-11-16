@@ -1,5 +1,6 @@
 import { reviews } from "@/constants/data";
 import Image from "next/image";
+import { Button } from ".";
 
 type ReviewItemProps = {
   firstName: string;
@@ -8,6 +9,7 @@ type ReviewItemProps = {
   specialization: string;
   description: string;
   number: string;
+  location: string;
 };
 const ReviewItem = ({
   firstName,
@@ -16,6 +18,7 @@ const ReviewItem = ({
   specialization,
   description,
   number,
+  location,
 }: ReviewItemProps) => {
   return (
     <div className="sm:min-w-[350px] min-w-[270px] flex-1 flex-wrap rounded-md border-2 border-blue-500 px-6 py-10">
@@ -37,6 +40,9 @@ const ReviewItem = ({
           <p className="capitalize text-blue-300">
             number: <span className="text-slate-100">{number}</span>
           </p>
+          <p className="capitalize text-blue-300">
+            location: <span className="text-slate-100">{location}</span>
+          </p>
           <div className="mt-1 flex">
             {Array.from({ length: 5 }).map((_, index) => (
               <Image
@@ -50,7 +56,7 @@ const ReviewItem = ({
           </div>
         </div>
       </div>
-      <div className="mt-6">
+      <div className="mt-4 w-full">
         <p className="capitalize text-blue-300">
           description: <span className="text-slate-100">{description}</span>
         </p>
@@ -62,13 +68,19 @@ const ReviewItem = ({
 const Blogs = () => {
   return (
     <div id="blogs" className="paddingX paddingY w-full flex flex-col gap-16">
-      <div className="bg-blue-300 p-8 rounded-lg">
-        <p className="bold-18 text-green-90 w-full md:w-[70%]">
-          In our Craftsmen's Hub, everyone can find a skilled craftsman who not
-          only enjoys their work but excels at it. Here is some information
-          about our craftsmen's - explore their profiles and discover your ideal
-          master of craftsmanship.
-        </p>
+      <div className="bg-blue-300 p-8 rounded-lg flexCol gap-4">
+        <h3 className="bold-24 lg:bold-30 capitalize text-green-90">
+          Find your craftsman
+        </h3>
+        <div className="md:flexBetween flexCol gap-8">
+          <p className="sm:bold-18 regular-16 text-green-90 w-full md:w-[70%]">
+            In our Craftsmen's Hub, everyone can find a skilled craftsman who
+            not only enjoys their work but excels at it. Here is some
+            information about our craftsmen's - explore their profiles and
+            discover your ideal master of craftsmanship.
+          </p>
+          <Button type="button" title="Discover" variant="btn_dark_green" />
+        </div>
       </div>
       <div className="flex gap-10 flex-wrap">
         {reviews.map((review) => (
@@ -80,6 +92,7 @@ const Blogs = () => {
             specialization={review.specialization}
             description={review.description}
             number={review.number}
+            location={review.location}
           />
         ))}
       </div>

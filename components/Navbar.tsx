@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link"; // Use Next.js Link instead of react-router-dom Link
+import Link from "next/link";
 import { navLinks } from "@/constants/data";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";

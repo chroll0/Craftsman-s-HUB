@@ -20,7 +20,7 @@
     @apply flex items-center justify-center;
   }
   .flexBetween {
-    @apply flex items-center justify-between;
+    @apply flex items-center justify-between flex-row;
   }
   .flexStart {
     @apply flex items-center justify-start;
@@ -34,6 +34,9 @@
   .flexCol {
     @apply flex flex-col justify-between items-start;
   }
+  .flexColReverse {
+    @apply flex flex-col-reverse justify-between items-start;
+  }
 
   .btn_white {
     @apply border-white regular-16 bg-blue-90 px-7 py-2.5 text-white hover:bg-green-90
@@ -41,10 +44,6 @@
   }
   .btn_dark_green {
     @apply border-white regular-16 tracking-widest px-8 py-5 text-white bg-blue-90 hover:bg-green-90
-    transition delay-100;
-  }
-  .btn_green {
-    @apply border-white regular-16 bg-green-500 px-8 py-5 text-white hover:bg-green-90
     transition delay-100;
   }
 
