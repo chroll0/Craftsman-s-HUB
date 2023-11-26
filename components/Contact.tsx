@@ -1,9 +1,6 @@
 "use client";
 
 import { useState, ChangeEvent } from "react";
-import { motion } from "framer-motion";
-
-import { slideIn } from "../utils/motion";
 import { MdEmail } from "react-icons/md";
 import { BsFacebook, BsFillTelephoneFill } from "react-icons/bs";
 import { Button } from ".";
@@ -59,7 +56,7 @@ const Contact = () => {
       className="paddingY paddingX md:flex-row flex-col flex gap-10 xl:gap-20
       overflow-hidden justify-center"
     >
-      <motion.div className="flex-1 bg-green-90 p-8 rounded-2xl max-w-2xl">
+      <div className="flex-1 bg-green-90 p-8 rounded-2xl max-w-2xl">
         <h3 className="bold-30 text-blue-400">Contact</h3>
         <form className="mt-8 flex flex-col gap-8" onSubmit={handleSubmit}>
           <label className="flex flex-col">
@@ -117,10 +114,9 @@ const Contact = () => {
             full={true}
           />
         </form>
-      </motion.div>
+      </div>
 
-      <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
+      <div
         className="flex flex-col xl:flex-[1/2] h-auto relative p-8 gap-8 rounded-2xl 
         border-[0.1px] border-blue-400"
       >
@@ -146,7 +142,7 @@ const Contact = () => {
           </div>
           <p className="regular-16">Craftsman's Hub profile</p>
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 };

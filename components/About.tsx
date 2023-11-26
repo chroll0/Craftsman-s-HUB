@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Button } from ".";
-import { slides } from "@/constants/data";
+import Link from "next/link";
 
 type SliderProps = {
   title: string;
@@ -44,12 +44,14 @@ const About = () => {
             mission is to empower craftsmen and connect them with users who
             appreciate their skills.
           </p>
-          <Button
-            type="button"
-            title="JOIN FREE"
-            icon=""
-            variant="btn_dark_green "
-          />
+          <Link href="/">
+            <Button
+              type="button"
+              title="JOIN FREE"
+              icon=""
+              variant="btn_dark_green "
+            />
+          </Link>
         </div>
       </div>
       <div className="hide-scrollbar flex h-[340px] w-full items-start justify-start gap-8 overflow-x-auto lg:h-[400px] xl:h-[640px] xl:px-16">

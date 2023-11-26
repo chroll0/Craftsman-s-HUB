@@ -3,7 +3,6 @@ import Navbar from "./Navbar";
 import About from "./About";
 import Blogs from "./Blogs";
 import Directory from "./Directory";
-import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Hiring from "./Hiring";
@@ -18,7 +17,6 @@ export {
   About,
   Blogs,
   Directory,
-  Feedbacks,
   Contact,
   Hiring,
   Footer,

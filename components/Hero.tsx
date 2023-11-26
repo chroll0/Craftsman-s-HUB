@@ -2,7 +2,7 @@ import { Button } from ".";
 
 const Hero = () => {
   return (
-    <div id="/" className="heroBackground w-full min-h-screen">
+    <div id="home" className="heroBackground w-full min-h-screen">
       <div className="flex items-start w-full padding overlay justify-between md:flex-row flex-col gap-12">
         <div className="flex flex-1 sm:gap-24 gap-12 flex-col xl:max-w-3xl">
           <h1 className="sm:bold-64 xs:bold-48 bold-36">

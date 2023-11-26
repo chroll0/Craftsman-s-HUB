@@ -9,7 +9,7 @@ const Footer = () => {
       className="paddingX paddingY bg-green-90 flex justify-between
     sm:flex-row flex-col items-start gap-8"
     >
-      <div className="flex justify-between sm:gap-20 gap-0 lg:flex-row flex-col">
+      <div className="flex justify-between sm:gap-20 lg:gap-44 lg:flex-row flex-col">
         <Link href="/">
           <p className="regular-18 leading-6 tracking-wide">
             Craftsman's{" "}

@@ -53,7 +53,9 @@ const Navbar = () => {
             cursor-pointer capitalize transition duration-200`}
                 onClick={() => setActive(link.title)}
               >
-                <a href={`#${link.id}`}>{link.title}</a>
+                <Link href={`#${link.id}`} scroll={true}>
+                  {link.title}
+                </Link>
               </li>
             ))}
           </ul>
